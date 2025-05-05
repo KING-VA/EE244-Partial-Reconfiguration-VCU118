@@ -1,0 +1,3 @@
+[submodule "chipyard-EE244-PR"]
+	path = chipyard-EE244-PR
+	url = https://github.com/KING-VA/chipyard-EE244-PR.git
