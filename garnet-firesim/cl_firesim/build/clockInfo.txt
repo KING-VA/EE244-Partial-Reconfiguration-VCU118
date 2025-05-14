@@ -1,0 +1,216 @@
+-------------------------------------
+| Tool Version : Vivado v.2023.2.2
+| Date         : Tue May 13 14:46:25 2025
+| Host         : a11
+| Design       : design_1
+| Device       : xcvu9p-flga2104-2L-E-
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+
+***********************
+Running Pre-CRP Checker
+***********************
+Number of global clocks: 21
+	Number of BUFGCE: 6
+	Number of BUFGCE_HDIO: 0
+	Number of BUFG_CTRL: 0
+	Number of BUFGCE_DIV: 0
+	Number of BUFG_GT: 15
+	Number of BUFG_PS: 0
+	Number of BUFG_FABRIC: 0
+	Running suboptimal placement checker for 15 BUFG_GT clocks (and their loads)...
+		No sub-optimality found
+	Running suboptimal placement checker for 17 clocks (and their loads) which do not have the CLOCK_LOW_FANOUT property but have a fanout less than 2000...
+		No sub-optimality found
+Pre-CRP Checker took 0 secs
+
+********************************
+Clock Net Route Info (CRP Input)
+********************************
+Clock 1: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_USERCLK
+	Clock source type: BUFG_GT fixed to track 20
+	Clock source region: X5Y8
+	Clock locked root: (2, 7)
+	Clock regions with locked loads: (2, 7) (2, 8) (3, 6) (3, 7) (3, 8) (3, 9) (3, 10) (4, 5) (4, 6) (4, 7) (4, 8) (4, 9) (5, 5) (5, 6) (5, 7) (5, 8) 
+	initial rect ((2, 5), (5, 10))
+
+Clock 2: partition_wrapper/partition/firesim_clocking/inst/clk_out1
+	Clock source type: BUFGCE fixed to track 4
+	Clock source region: X2Y8
+	Clock locked root: (1, 8)
+	Clock regions with locked loads: (0, 8) (1, 6) (1, 7) (1, 8) (1, 9) (2, 6) (2, 7) (2, 8) (2, 9) (3, 7) (3, 8) (3, 9) (3, 11) (3, 12) 
+	initial rect ((0, 6), (3, 12))
+
+Clock 3: partition_wrapper/partition/firesim_top/top/sim/target/FireSim_/clockBridge_clocks_0_buffer_O
+	Clock source type: BUFGCE fixed to track 1
+	Clock source region: X2Y8
+	Clock locked root: (1, 8)
+	Clock regions with locked loads: (0, 6) (0, 7) (0, 8) (0, 9) (1, 6) (1, 7) (1, 8) (1, 9) (2, 6) (2, 7) (2, 8) (2, 9) (3, 7) (3, 8) 
+	initial rect ((0, 6), (3, 9))
+
+Clock 4: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/ext_ch_gt_drpclk
+	Clock source type: BUFG_GT fixed to track 21
+	Clock source region: X5Y6
+	Clock locked root: (5, 7)
+	Clock regions with locked loads: (5, 5) (5, 6) (5, 7) (5, 8) (5, 9) 
+	initial rect ((5, 5), (5, 9))
+
+Clock 5: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_PCLK2_GT
+	Clock source type: BUFG_GT fixed to track 17
+	Clock source region: X5Y8
+	Clock locked root: (2, 7)
+	Clock regions with locked loads: (5, 5) (5, 6) (5, 7) (5, 8) 
+	initial rect ((2, 5), (5, 8))
+
+Clock 6: partition_wrapper/partition/firesim_top/top/FASEDMemoryTimingModel_0/gate_O
+	Clock source type: BUFGCE fixed to track 5
+	Clock source region: X2Y8
+	Clock locked root: (1, 8)
+	Clock regions with locked loads: (1, 7) (1, 8) 
+	initial rect ((1, 7), (2, 8))
+
+Clock 7: shell/shim/debug_bridge_bscan/inst/bs_switch/inst/BSCAN_SWITCH.N_EXT_BSCAN.itck_i
+	Clock source type: BUFGCE fixed to track 2
+	Clock source region: X4Y6
+	Clock locked root: (2, 7)
+	Clock regions with locked loads: (3, 7) 
+	initial rect ((2, 6), (4, 7))
+
+Clock 8: shell/PCI_DMA/debug_bridge_pci/inst/bsip/inst/tck
+	Clock source type: BUFGCE fixed to track 8
+	Clock source region: X4Y5
+	Clock locked root: (5, 7)
+	Clock regions with locked loads: (5, 7) 
+	initial rect ((4, 5), (5, 7))
+
+Clock 9: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT fixed to track 16
+	Clock source region: X5Y7
+	Clock locked root: (5, 7)
+	Clock regions with locked loads: (5, 7) 
+	initial rect ((5, 7), (5, 7))
+
+Clock 10: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT fixed to track 11
+	Clock source region: X5Y7
+	Clock locked root: (5, 7)
+	Clock regions with locked loads: (5, 7) 
+	initial rect ((5, 7), (5, 7))
+
+Clock 11: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[12].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT fixed to track 19
+	Clock source region: X5Y8
+	Clock locked root: (5, 7)
+	Clock regions with locked loads: (5, 7) (5, 8) 
+	initial rect ((5, 7), (5, 8))
+
+Clock 12: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[13].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT fixed to track 7
+	Clock source region: X5Y8
+	Clock locked root: (5, 8)
+	Clock regions with locked loads: (5, 8) 
+	initial rect ((5, 8), (5, 8))
+
+Clock 13: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[14].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT fixed to track 9
+	Clock source region: X5Y8
+	Clock locked root: (5, 8)
+	Clock regions with locked loads: (5, 8) 
+	initial rect ((5, 8), (5, 8))
+
+Clock 14: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[7].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT fixed to track 1
+	Clock source region: X5Y6
+	Clock locked root: (5, 7)
+	Clock regions with locked loads: (5, 7) 
+	initial rect ((5, 6), (5, 7))
+
+Clock 15: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[8].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT fixed to track 15
+	Clock source region: X5Y7
+	Clock locked root: (5, 7)
+	Clock regions with locked loads: (5, 7) 
+	initial rect ((5, 7), (5, 7))
+
+Clock 16: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[9].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT fixed to track 0
+	Clock source region: X5Y7
+	Clock locked root: (5, 7)
+	Clock regions with locked loads: (5, 7) 
+	initial rect ((5, 7), (5, 7))
+
+Clock 17: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_INTCLK
+	Clock source type: BUFG_GT fixed to track 4
+	Clock source region: X5Y8
+	Clock locked root: (5, 6)
+	Clock regions with locked loads: (5, 6) 
+	initial rect ((5, 6), (5, 8))
+
+Clock 18: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[15].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT fixed to track 18
+	Clock source region: X5Y8
+	Clock locked root: (5, 9)
+	Clock regions with locked loads: (5, 9) 
+	initial rect ((5, 8), (5, 9))
+
+Clock 19: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_CORECLK
+	Clock source type: BUFG_GT fixed to track 12
+	Clock source region: X5Y8
+	Clock locked root: (2, 7)
+	Clock regions with locked loads: (5, 6) 
+	initial rect ((2, 6), (5, 8))
+
+Clock 20: shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_MCAPCLK
+	Clock source type: BUFG_GT fixed to track 13
+	Clock source region: X5Y8
+	Clock locked root: (5, 5)
+	Clock regions with locked loads: (5, 5) 
+	initial rect ((5, 5), (5, 8))
+
+Clock 21: partition_wrapper/partition/firesim_clocking/inst/clkfbout_buf_clk_wiz_0_firesim
+	Clock source type: BUFGCE fixed to track 6
+	Clock source region: X2Y8
+	Clock locked root: (1, 8)
+	Clock regions with locked loads: (2, 8) 
+	initial rect ((1, 8), (2, 8))
+
+
+
+*****************
+User Constraints:
+*****************
+The following 2 clock nets belong to CLOCK_DELAY_GROUP shell_PCI_DMA_xdma_inst_pcie4_ip_i_inst_group_i0:
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_USERCLK
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_CORECLK
+
+
+
+*************************
+DFX Flow Clock Type Info:
+*************************
+The following 20 are static clocks:
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_USERCLK
+	partition_wrapper/partition/firesim_clocking/inst/clk_out1
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/ext_ch_gt_drpclk
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_PCLK2_GT
+	partition_wrapper/partition/firesim_top/top/FASEDMemoryTimingModel_0/gate_O
+	shell/shim/debug_bridge_bscan/inst/bs_switch/inst/BSCAN_SWITCH.N_EXT_BSCAN.itck_i
+	shell/PCI_DMA/debug_bridge_pci/inst/bsip/inst/tck
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[12].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[13].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[14].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[7].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[8].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[9].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_INTCLK
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/shell_xdma_0_pcie4_ip_gt_i/inst/gen_gtwizard_gtye4_top.shell_xdma_0_pcie4_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[15].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_6_gtye4_cpll_cal_tx_i/txoutclkmon
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_CORECLK
+	shell/PCI_DMA/xdma/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_MCAPCLK
+	partition_wrapper/partition/firesim_clocking/inst/clkfbout_buf_clk_wiz_0_firesim
+The following 1 are static driver boundary clocks:
+	partition_wrapper/partition/firesim_top/top/sim/target/FireSim_/clockBridge_clocks_0_buffer_O
+
+
